@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나아짐코리아</title>
+  <link rel="stylesheet" href="./css/sub_index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <script type="module" src="./js/sub.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"></script>
+</head>
+<body>
+  <a href="#!">
+    <div class="head_banner" id="head_banner">
+      <img src="./images/haedbanner.jpg" alt="해드배너">
+    </div>
+  </a>
+  <header class="header_bg">
+    <div class="header" id="header">
+      <div class="header_box">
+        <a href="../index.html">
+          <div class="logo_box">
+            <div class="logo_img">
+              <img src="./images/logo.jpg" alt="나아짐로고이미지">
+            </div>
+            <div class="logo_txt">
+              <p><strong>나아짐 코리아</strong></p>
+              <p>NAAGYM KOREA</p>
+            </div>
+          </div>
+        </a>
+        <ul class="lnb">
+          <li class="lnb_menu lnb01"><a href="./sub_index.html">쇼핑몰</a>
+            <ul class="lnb_sub sub_menu01">
+              <li><a href="./sub_index.html"">통증</a></li>
+              <li><a href="#!">움직임</a></li>
+              <li><a href="#!">퍼포먼스</a></li>
+              <li><a href="#!">재활필라테스</a></li>
+              <li><a href="#!">근막&마사지</a></li>
+              <li><a href="#!">운동밴드</a></li>
+              <li><a href="#!">요가매트</a></li>
+              <li><a href="#!">보호대</a></li>
+            </ul>
+          </li>
+          
+          <li class="lnb_menu lnb03"><a href="#!">나아짐운동센터</a>
+            <ul class="lnb_sub sub_menu03">
+              <li><a href="#!">센터소개</a></li>
+              <li><a href="#!">강사진</a></li>
+              <li><a href="#!">프로그램안내</a></li>
+              <li><a href="#!">이벤트</a></li>
+              <li><a href="#!">상담</a></li>
+              <li><a href="#!">후기</a></li>
+              <li><a href="#!">오시는길</a></li>
+            </ul>
+          </li>
+          <li class="lnb_menu"><a href="#!">자료실</a></li>
+          <li class="lnb_menu"><a href="#!">회사소개</a></li>
+          <li class="lnb_menu"><a href="#!">고객센터</a></li>
+        </ul>
+        <nav class="gnb_box">
+          <p class="iclass"><i class="fa-solid fa-square-phone"></i> <span>051-624-0588</span></p>
+          <ul class="gnb">
+            <a href="/log_in_page/loginpage.html"><li>로그인</li></a>
+            <a href="/log_in_page/agreement.html"><li>회원가입</li></a>
+            <a href="#!"><li>마이페이지</li></a>
+            <a href="#!"><li style="color: #BF1F1F; font-weight:bold">개인결제</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>  
+  <!----------header e n d ------------------->
+
+  <p class="title">
+    <a href="./sub_index.html">통증 <span style="font-size: 14px;"> > </span><a href="./sub_index.html" style="font-size: 14px;">쇼핑몰</a> <span style="font-size: 14px;"> > </span><a href="../index.html" style="font-size: 14px;">홈</a></a>
+    <select class="view" name="view" id="view">
+      <option value="기본정렬" selected>기본정렬</option>
+      <option value="기본정렬">인기순</option>
+      <option value="기본정렬">판매순</option>
+      <option value="기본정렬">낮은 가격 순</option>
+      <option value="기본정렬">높은 가격 순</option>
+    </select>
+  </p><!----타이틀 end---->
+  <input type="radio" name="category_list" id="category01" checked>
+  <input type="radio" name="category_list" id="category02">
+
+
+  <section class="category_icon">
+    <div class="category_lab_box">
+      <label class="category_box category_box01" for="category01">
+        <div class="category_img">
+          <img src="./images/category01.png" alt="카테고리_통증아이콘">
+        </div>
+        <p class="category_icon_name">통증</p>
+      </label>
+      <label class="category_box category_box02" for="category02">  
+        <div class="category_img">
+          <img src="./images/category02.png" alt="카테고리_움직임아이콘">
+        </div>
+        <p class="category_icon_name">움직임</p>
+      </label>
+      <label class="category_box category_box03" for="category03">
+        <div class="category_img">
+          <img src="./images/category03.png" alt="카테고리_퍼포먼스아이콘">
+        </div>
+        <p class="category_icon_name">퍼포먼스</p>
+      </label>
+      <label class="category_box category_box04" for="category04">
+        <div class="category_img">
+          <img src="./images/category04.png" alt="카테고리_재활필라테스아이콘">
+        </div>
+        <p class="category_icon_name">재활필라테스</p>
+      </label>
+      <label class="category_box category_box05" for="category05">
+        <div class="category_img">
+          <img src="./images/category05.png" alt="카테고리_근막&마사지아이콘">
+        </div>
+        <p class="category_icon_name">근막&마사지</p>
+      </label>
+      <label class="category_box category_box06" for="category06">
+        <div class="category_img">
+          <img src="./images/category06.png" alt="카테고리_운동밴드아이콘">
+        </div>
+        <p class="category_icon_name">운동밴드</p>
+      </label>
+      <label class="category_box category_box07" for="category07">
+        <div class="category_img">
+          <img src="./images/category07.png" alt="카테고리_요가매트아이콘">
+        </div>
+        <p class="category_icon_name">요가매트</p>
+      </label>
+      <label class="category_box category_box08" for="category08">
+        <div class="category_img">
+          <img src="./images/category08.png" alt="카테고리_보호대아이콘">
+        </div>
+        <p class="category_icon_name">보호대</p>
+      </label>
+    </div>
+  </section><!--카테고리 아이콘 end-->
+
+  <div class="sheet01_category01 sheet_category">
+    <div class="sub_lab">
+      <label for="category_sub01">전체보기</label>
+      <label for="category_sub02">슬링 (레드코드)</label>
+      <label for="category_sub03">토구 (밸런스)</label>
+      <label for="category_sub04">볼란스 (이완)</label>
+    </div>
+
+    <div class="container"></div>
+
+    <ul class="page_nav">
+      <a href="#!"><li><i class="fa-solid fa-angles-left"></i></li></a>
+      <a href="#!"><li><i class="fa-solid fa-angle-left"></i></li></a>
+      <a href="#!"><li>1</li></a>
+      <a href="#!"><li><i class="fa-solid fa-angle-right"></i></li></a>
+      <a href="#!"><li><i class="fa-solid fa-angles-right"></i></li></a>
+    </ul>
+  </div>
+
+  <!--------------------------------------->
+  <footer class="footer">
+    <div class="footer_box">
+      <nav>
+        <ul class="footer_nav">
+          <li><a href="../index.html">홈</a></li>
+          <li><a href="#!">회사소개</a></li>
+          <li><a href="#!">이용약관</a></li>
+          <li><a href="#!"><strong>개인정보처리방침</strong></a></li>
+          <li><a href="#!">이용안내</a></li>
+          <li><a href="#!">고객센터</a></li>
+        </ul>
+      </nav>
+      <div class="footer_info_box">
+        <div class="footer_info_left">
+          <p class="footer_info_txt01">상호명 : ㈜나아짐 코리아 <span>대표자 : 신상윤</span> <span style="float: right;">부산 해운대구 마린시티2로2 마린파크 1313호</span></p>
+          <p class="footer_info_txt01">개인정보관리책임자 : 신상윤<span style="float: right;">TEL : 1600-0137 / FAX : 051-624-0589</span></p>
+          <p class="footer_info_txt01">사업자 등록번호 : 456-86-01389 <a style="color: #dadcd9;" href="#!">[사업자등록확인]</a></p>
+          <p class="footer_info_txt01">통신판매신고 : 2019-부산해운대-0022 <span style="float: right;">Copyrightⓒnaagymkorea.com All right reserved.</span></p>
+        </div>
+        <div class="footer_info_right">
+          <p class="footer_info_right_title">CUSTOMER CENTER</p>
+          <div>
+            <div class="footer_rigth_info01">051-624-0588</div>
+            <div class="footer_rigth_info02">평일 09 : 00 ~ 18 : 00<br/>토요일/일요일,공휴일 휴무</div>
+          </div>
+          <p class="footer_info_right_title">BANK INFO</p>
+          <div class="bank_info_box">
+            <div class="footer_rigth_info01">1005-303-604847</div>
+            <div class="footer_rigth_info02 bank_info">우리은행<br/>예금주 : ㈜나아짐코리아 </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--------footer e n d--------------->
+  <aside class="quick_menu">
+    <ul>
+      <a href="#!"><li><i class="fa-solid fa-headset"></i><br/>온라인문의</li></a>
+      <a href="#!"><li><i class="fa-regular fa-comment"></i><br/>카톡문의</li></a>
+      <a href="#!"><li><i class="fa-regular fa-calendar"></i><br/>교육일정</li></a>
+      <a href="#!"><li><i class="fa-solid fa-location-dot"></i><br/>오시는길</li></a>
+      <a href="#head_banner"><li style="line-height: 60px;">TOP</li></a>
+    </ul>
+  </aside>
+</body>
+</html>
+
+
