@@ -41,3 +41,6 @@ $(function(){
 })
 
 
+document.addEventListener("DOMContentLoaded",()=>{
+  alert('서브페이지 = 쇼핑몰 -> 통증\n디테일페이지 = 쇼핑몰 -> 통증 -> 점퍼')
+})
