@@ -1,0 +1,318 @@
+* {
+  margin: 0; padding: 0;
+  font-family : 'Noto Sans KR', sans-serif;
+}
+a {text-decoration: none; color: black;}
+li {list-style: none;}
+img {display: block; width: 100%; height: 100%;}
+/*----------------------------------------------*/
+html {
+  scroll-behavior:smooth;
+  font-size: 100%;
+}
+.header_bg {
+  width: 100%; height: 120px; 
+  position: sticky;
+  top: 0;
+  z-index: 99999999999;
+}
+.header_bg:hover{background-color: white; opacity: 0.95;}
+.header {
+  width: 100%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  background-color: white;
+}
+.head_banner {
+  width: 1900px;
+  margin: 0 auto;
+}
+.head_banner img {
+  width: 100%; height: auto;
+}
+.header_box {
+  width: 1274px; height: 62px;
+  margin: 0 auto;
+}
+.logo_box {
+  width: 200px; height: 62px;
+  float: left;
+  overflow: hidden;
+  margin-top: 5px;
+}
+.logo_box .logo_img {
+  width: 50px; height: 50px;
+}
+.logo_box .logo_img img {
+  width: 100%; height: auto;
+}
+.logo_box>div {
+  float: left;
+}
+.logo_txt {
+  text-align: center;
+  padding: 5px 5px;
+  border-right: 1px solid #999;
+  box-sizing: border-box;
+  padding-right: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+}
+.logo_txt p:nth-child(1) {
+  font-size: 18px;
+  padding-left: 5px;
+}
+.logo_txt p:nth-child(2) {
+  font-size: 12px;
+  color: #999;
+} /*-----logo e n d---------*/
+.lnb {
+  float: left;
+}
+.lnb .lnb_menu {
+  float: left;
+  width: 145px; height: 62px;
+  line-height: 62px;
+  text-align: center;
+  margin: 0 10px;
+  font-weight: 500;
+  box-sizing: border-box;
+  border-bottom: 1px solid white;
+  position: relative;
+  cursor: pointer;
+}
+.lnb_menu>a {
+  display: block;
+  width: 145px; height: 50px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid white;
+  transition: all ease-in-out 0.3s;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+.lnb_menu:hover>a {
+  border-bottom: 2px solid #BF1F1F;
+  color: #BF1F1F;
+  font-weight: bold;
+}
+.lnb_sub {
+  width: 800%; height: 50px;
+  display: inline-block;
+  display: none;
+  position: absolute;
+  left: 0; top: 50px;
+}
+.lnb_sub li {
+  float: left;
+  text-align: center;
+  padding: 10px;
+}
+.sub_menu01 {
+  margin-left: 40px;
+}
+.sub_menu03 {
+  margin-left: 18px;
+}
+.lnb_sub li a {
+  transition: all 0.3s;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  border: 1px solid none;
+  border-radius: 10px;
+}
+.lnb_sub li:hover a {
+  color: #BF1F1F;
+  font-weight: 500;
+  border-bottom: #BF1F1F;
+  border: 1px solid #BF1F1F;
+  padding: 2px 10px;
+  border-radius: 10px;
+  background-color: white;
+}
+.lnb01:hover .sub_menu01 { display: block;}
+.lnb03:hover .sub_menu03 { display: block;}
+/*-------lnb e n d-------*/
+.gnb_box {
+  float: right;
+  font-family: 'Noto Sans KR', sans-serif;
+  margin-top: 5px;
+}
+.gnb_box .gnb {
+  font-size: 0;
+}
+.gnb_box .gnb li{
+  display: inline-block;
+  font-size: 12px;
+  border-right: 1px solid #666;
+  line-height: 9px;
+  padding: 0 5px;
+  color: #666;
+}
+.gnb_box .gnb a:hover li {
+  font-weight: bold;
+}
+.gnb_box .gnb a:last-child li {
+  border: none;
+}
+.gnb_box p{
+  margin: 3px 0 5px 30px;
+  font-size: 20px;
+}
+.gnb_box .iclass {
+  color: #BF1F1F;
+} 
+.gnb_box .iclass>span {
+  color: black;
+}/*----gnb e n d----*/
+/*-------header e n d------------*/
+#member,#non_member {display: none;}
+#member:checked~.lab_box .member,
+#non_member:checked~.lab_box .non_member {
+  background-color: #BF1F1F;
+  color: white;
+  border: #BF1F1F;
+}
+#member:checked~.sheet_member {display: block;}
+#non_member:checked~.sheet_non_mamber {display: block;}
+.login_page_wrap .login_form .sheet_member {display: none;}
+.login_page_wrap .login_form .sheet_non_mamber {display: none;}
+
+.login_page_wrap {
+  width: 31.25vw; height: 32.3vw;
+  margin: 0 auto;
+}
+.login_page_wrap .login_page_logo {
+  width: 50px; height: 50px;
+  margin: 0 auto;
+}
+.login_page_wrap .login_form {
+  width: 22.91vw;
+  margin: 0 auto;
+}
+.login_page_wrap .login_form p {
+  padding: 40px 0;
+  text-align: center;
+  font-size: 2rem;
+}
+.login_page_wrap .login_form .lab_box {
+  text-align: center;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.login_page_wrap .login_form .lab_box label {
+  width: 220px; height: 40px;
+  line-height: 40px;
+  border: 1px solid #ccc; box-sizing: border-box;
+  cursor: pointer;
+}
+.login_page_wrap .login_form .lab_box .member {border-right: none;}
+.login_page_wrap .login_form .lab_box .non_member {border-left: none;}
+
+.login_page_wrap .sheet_member .member_form input {
+  width: 100%; height: 40px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px 0 10px 20px;
+  margin: 5px 0;
+}
+.login_page_wrap .sheet_member .member_form input:focus {
+  outline: 1px solid #BF1F1F;
+}
+#save_id:checked~label {opacity: 0.6;}
+#save_id~label {opacity: 1; }
+#save_id:checked~label .check {background-image: none;}
+#save_id~label .check {
+  background-image: url(./images/check-solid.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center;
+}
+.login_page_wrap .sheet_member .save_id {
+  font-size: 0.75rem;
+  align-self: center;
+}
+.login_page_wrap .sheet_member .save_id input {
+  display: none;
+}
+.login_page_wrap .sheet_member .save_id label {
+  cursor: pointer;
+  display: block;
+  height: 24px;
+  line-height: 24px;
+  position: relative;
+}
+.login_page_wrap .sheet_member .save_find_idpw .save_id label .check {
+  display: inline-block;
+  width: 14px; height: 14px;
+  border: 1px solid black; box-sizing: border-box;
+  position: absolute;
+  top: 5px;
+}
+.login_page_wrap .sheet_member .save_find_idpw {
+  display: flex;
+  justify-content: space-between;
+}
+.login_page_wrap .sheet_member .save_find_idpw .find_member a {
+  display: inline-block;
+  font-size: 0.875rem;
+}
+.login_page_wrap .sheet_member .save_find_idpw .find_member a:first-child::after{
+  content: 'ㅣ';
+}
+.login_page_wrap .sheet_member .login_btn,
+.login_page_wrap .sheet_member .join_btn{
+  width: 100%;
+  height: 60px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  background-color: white;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.login_page_wrap .sheet_member .login_btn {
+  margin: 20px 0 10px 0;
+  background: #971414;
+  color: white;
+}
+.login_page_wrap .sheet_member .login_btn:hover {
+  /* background: linear-gradient(to left, #BF1F1F,#dd1919); */
+  background-color:#BF1F1F;
+}
+.login_page_wrap .sheet_member .join_btn:hover {
+  border:1px solid #666;
+}
+
+/*---------sheet_member-----------*/
+.login_page_wrap .login_form .sheet_non_mamber .non_member_form input {
+  width: 100%; height: 40px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 10px 0 10px 20px;
+  margin: 5px 0;
+}
+.login_page_wrap .login_form .sheet_non_mamber .non_member_form input:focus {
+  outline: 1px solid #BF1F1F;
+}
+.login_page_wrap .login_form .sheet_non_mamber .non_mamber_btn {
+  width: 100%;
+  height: 60px;
+  font-size: 1.125rem;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  background: #971414;
+  color: white;
+  margin-top: 20px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+.login_page_wrap .login_form .sheet_non_mamber .non_mamber_btn:hover{
+  background-color:#BF1F1F;
+}
+.login_page_wrap .login_form .sheet_non_mamber p {
+  font-size: 0.875rem;
+  padding: 0 50px; box-sizing: border-box;
+  margin-top: 30px;
+}

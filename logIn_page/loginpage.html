@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나아짐 코리아</title>
+  <link rel="stylesheet" href="./css/loginpage.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./js/loginpage.js"></script>
+  
+  
+</head>
+<body>
+  
+  <a href="#!">
+    <div class="head_banner" id="head_banner">
+      <img src="../images/haedbanner.jpg" alt="해드배너">
+    </div>
+  </a>
+  <header class="header_bg">
+    <div class="header" id="header">
+      <div class="header_box">
+        <a href="../index.html">
+          <div class="logo_box">
+            <div class="logo_img">
+              <img src="../images/logo.jpg" alt="나아짐로고이미지">
+            </div>
+            <div class="logo_txt">
+              <p><strong>나아짐 코리아</strong></p>
+              <p>NAAGYM KOREA</p>
+            </div>
+          </div>
+        </a>
+        <ul class="lnb">
+          <li class="lnb_menu lnb01"><a href="../sub_page/sub_index.html">쇼핑몰</a>
+            <ul class="lnb_sub sub_menu01">
+              <li><a href="../sub_page/sub_index.html">통증</a></li>
+              <li><a href="#!">움직임</a></li>
+              <li><a href="#!">퍼포먼스</a></li>
+              <li><a href="#!">재활필라테스</a></li>
+              <li><a href="#!">근막&마사지</a></li>
+              <li><a href="#!">운동밴드</a></li>
+              <li><a href="#!">요가매트</a></li>
+              <li><a href="#!">보호대</a></li>
+            </ul>
+          </li>
+          <li class="lnb_menu lnb03"><a href="#!">나아짐운동센터</a>
+            <ul class="lnb_sub sub_menu03">
+              <li><a href="#!">센터소개</a></li>
+              <li><a href="#!">강사진</a></li>
+              <li><a href="#!">프로그램안내</a></li>
+              <li><a href="#!">이벤트</a></li>
+              <li><a href="#!">상담</a></li>
+              <li><a href="#!">후기</a></li>
+              <li><a href="#!">오시는길</a></li>
+            </ul>
+          </li>
+          <li class="lnb_menu"><a href="#!">자료실</a></li>
+          <li class="lnb_menu"><a href="#!">회사소개</a></li>
+          <li class="lnb_menu"><a href="#!">고객센터</a></li>
+        </ul>
+        <nav class="gnb_box">
+          <p class="iclass"><i class="fa-solid fa-square-phone"></i> <span>051-624-0588</span></p>
+          <ul class="gnb">
+            <a href="./loginpage.html"><li>로그인</li></a>
+            <a href="./agreement.html"><li>회원가입</li></a>
+            <a href="#!"><li>마이페이지</li></a>
+            <a href="#!"><li style="color: #BF1F1F; font-weight:bold">개인결제</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>  
+  <!----------header e n d ------------------->
+
+
+  <div class="login_page_wrap">
+    <div class="login_page_logo">
+      <img src="../images/logo.jpg" alt="나아짐 로고">
+    </div>
+
+    <form class="login_form" id="login_form"> 
+      <p>로그인</p>
+      <input type="radio" name="login_choice" id="member" checked>
+      <input type="radio" name="login_choice" id="non_member">
+
+      <div class="lab_box">
+        <label for="member" class="member">회원</label>
+        <label for="non_member" class="non_member">비회원 주문조회</label>
+      </div>
+
+
+      <div class="sheet_member">
+        <div class="member_form">
+          <input type="text" id="member_id" placeholder=" 아이디를 입력하세요." required autofocus>
+          <input type="password" id="member_pw" placeholder=" 비밀번호를 입력하세요." required>
+        </div>
+        <div class="save_find_idpw">
+          <span class="save_id">
+            <input type="checkbox" id="save_id" checked>
+            <label for="save_id"><span class="check"></span> <span style="margin-left: 18px;">아이디 저장</span></label>
+          </span>
+          <div class="find_member">
+            <a href="#!" class="find_id">아이디찾기</a>
+            <a href="#!" class="find_pw">비밀번호찾기</a>
+          </div>
+        </div>
+        <input type="button"  class="login_btn" id="login_btn" value="로그인">
+        <input type="button" class="join_btn" value="회원가입" onclick="openAgreementform()">
+      </div>
+
+      <div class="sheet_non_mamber">
+        <div class="non_member_form">
+          <input type="text" id="non_member_id" placeholder=" 주문자명" required autofocus>
+          <input type="password" id="non_member_pw" placeholder=" 주문번호" required>
+        </div>        
+
+        <input type="button" class="non_mamber_btn" value="비회원 주문조회">
+        <p>주문번호를 잊어버리신 경우 고객센터 051-624-0588 로 문의하여 주시기 바랍니다.</p>
+      </div>
+
+    </form>
+
+  </div>
+
+
+
+</body>
+</html>

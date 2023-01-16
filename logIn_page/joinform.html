@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>나아짐 코리아</title>
+  <link rel="stylesheet" href="./css/joinform.css">
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+  <script src="./js/joinform.js"></script>
+</head>
+<body>
+  
+  <a href="#!">
+    <div class="head_banner" id="head_banner">
+      <img src="../images/haedbanner.jpg" alt="해드배너">
+    </div>
+  </a>
+  <header class="header_bg">
+    <div class="header" id="header">
+      <div class="header_box">
+        <a href="../index.html">
+          <div class="logo_box">
+            <div class="logo_img">
+              <img src="../images/logo.jpg" alt="나아짐로고이미지">
+            </div>
+            <div class="logo_txt">
+              <p><strong>나아짐 코리아</strong></p>
+              <p>NAAGYM KOREA</p>
+            </div>
+          </div>
+        </a>
+        <ul class="lnb">
+          <li class="lnb_menu lnb01"><a href="../sub_page/sub_index.html">쇼핑몰</a>
+            <ul class="lnb_sub sub_menu01">
+              <li><a href="../sub_page/sub_index.html">통증</a></li>
+              <li><a href="#!">움직임</a></li>
+              <li><a href="#!">퍼포먼스</a></li>
+              <li><a href="#!">재활필라테스</a></li>
+              <li><a href="#!">근막&마사지</a></li>
+              <li><a href="#!">운동밴드</a></li>
+              <li><a href="#!">요가매트</a></li>
+              <li><a href="#!">보호대</a></li>
+            </ul>
+          </li>
+          <li class="lnb_menu lnb03"><a href="#!">나아짐운동센터</a>
+            <ul class="lnb_sub sub_menu03">
+              <li><a href="#!">센터소개</a></li>
+              <li><a href="#!">강사진</a></li>
+              <li><a href="#!">프로그램안내</a></li>
+              <li><a href="#!">이벤트</a></li>
+              <li><a href="#!">상담</a></li>
+              <li><a href="#!">후기</a></li>
+              <li><a href="#!">오시는길</a></li>
+            </ul>
+          </li>
+          <li class="lnb_menu"><a href="#!">자료실</a></li>
+          <li class="lnb_menu"><a href="#!">회사소개</a></li>
+          <li class="lnb_menu"><a href="#!">고객센터</a></li>
+        </ul>
+        <nav class="gnb_box">
+          <p class="iclass"><i class="fa-solid fa-square-phone"></i> <span>051-624-0588</span></p>
+          <ul class="gnb">
+            <a href="./loginpage.html"><li>로그인</li></a>
+            <a href="./agreement.html"><li>회원가입</li></a>
+            <a href="#!"><li>마이페이지</li></a>
+            <a href="#!"><li style="color: #BF1F1F; font-weight:bold">개인결제</li></a>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>  
+  <!----------header e n d ------------------->
+
+  <div class="wrap">
+    
+    <h1 class="title_join">회원가입</h1>
+
+    <form class="join_form">
+
+      <h3>필수입력정보</h3>
+      <p style="font-size: 14px; color: #666;">필수항목이므로 반드시 입력해 주시기 바랍니다.</p>
+      <p style="margin-top: 20px;">　</p>
+      <div class="infobox">
+        <span class="category">아이디</span>
+        <input type="text" name="userId" id="userId" placeholder="영문자/ 숫자 6~20자 (한글과 공백은 사용 불가)"  required>
+        <button type="button" id="userId_check" class="userId_check">중복확인</button>
+      </div>
+      
+      <div class="infobox">
+        <span class="category">비밀번호</span>
+        <input type="password" name="userPw" id="userPw" class="pw" placeholder="영문,숫자,특수문자가 혼합된 8~20자 이내로 입력해 주세요." required>
+      </div>
+      <div class="infobox">
+        <span class="category">비밀번호 확인</span>
+        <input type="password" name="userPw_re" id="userPw_re" class="pw" placeholder="비밀번호 확인을 위해 한번 더 입력해 주세요." required>
+        <span class="userPw_result"></span>
+      </div>
+
+      <div class="infobox">
+        <span class="category">이름</span>
+        <input type="text" name="userName" id="userName" required>
+      </div>
+
+      <div class="infobox">
+        <span class="category">연락처</span>
+        <select name="userTell_first" id="userTell_first">
+          <option value="userTell_01" selected>010</option>
+          <option value="userTell_02" >011</option>
+          <option value="userTell_03" >016</option>
+          <option value="userTell_04" >017</option>
+          <option value="userTell_05" >018</option>
+          <option value="userTell_06" >019</option>
+        </select>
+        <span class="hyphen">-</span>
+        <input type="tel" name="userTell_mid" id="userTell_mid">
+        <span class="hyphen">-</span>
+        <input type="tel" name="userTell_last" id="userTell_last">
+      </div>
+
+      <div class="infobox">
+        <span class="category">이메일</span>
+        <input type="email" id="user_email_first" required>
+        <span class="hyphen">@</span>
+        <input type="email" id="user_email_last">
+        <select name="user_email_select" id="user_email_select" onchange="changeEmail">
+          <option value="직접입력" selected>직접입력</option>
+          <option value="http://www.naver.com">naver.com</option>
+          <option value="http://www.nate.com">nate.com</option>
+          <option value="http://www.daum.net">daum.net</option>
+          <option value="http://www.gmail.com">gmail.com</option>
+          <option value="http://www.icloud.com">icloud.com</option>
+          <option value="http://www.hotmail.com">hotmail.com</option>
+        </select>
+      </div>      
+
+      <h3 style="margin: 4rem 0;">선택입력정보</h3>
+
+      <div class="infobox">
+        <span class="category">주소</span>
+        <input type="text" name="postCode" id="postCode" placeholder="우편번호 검색" required>
+        <button id="postcode_serch">검색</button>
+      </div>
+
+      <div class="infobox">
+        <span class="category">　</span>
+        <input type="text" name="address" id="address" placeholder="주소를 입력해주세요" required>
+        <input type="text" name="detail_address" id="detail_address" placeholder="상세주소를 입력해주세요" required>
+      </div>
+
+      <p class="ad_agree">
+        <span>광고/마케팅<br/>수신동의</span>
+        <span>
+          <input type="checkbox" name="SMS" id="ad_sms"> SMS문자</input> 
+          <input type="checkbox" name="e-mail" id="ad_e-mail"> 이메일</input>
+        </span>
+      </p>
+    </form>
+    <div class="btnbox">
+      <button class="btn_join btn" id="btn_join">가입 완료</button>
+      <button class="btn_cancle btn" id="btn_cancle">취소</button>
+    </div>
+
+  </div>
+
+ 
+
+
+
+</body>
+</html>
